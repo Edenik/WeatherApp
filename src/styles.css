@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 85%;
+}
+
+
+
+input:focus, button:focus {
+  outline-width: 0;
+}
+
+.city {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 20px;
+  width: 170px;
+  min-height: 240px;
+  max-height: 400px;
+  background: linear-gradient(rgb(167, 207, 223) 0%, rgb(35, 83, 138) 100%);
+  box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+  border: solid 3px rgb(167, 207, 223);
+  padding: 10px;
+  transition: transform 1s;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+.city:hover{
+  border: solid 3px rgb(35, 83, 138);
+    transform: scale(1.1);
+}
+
+.city p{
+    color: #ffffff;
+    text-shadow:0px 1px 0px #000000;
+}
+
+.city h2{
+  color: rgb(35, 83, 138) ;
+  text-shadow:0px 1px 0px #fff;
+}
+
+.city h3{
+  color: #fff ;
+  text-shadow:0px 1px 0px rgb(35, 83, 138);
+}
+
+h1{
+    color: rgb(35, 83, 138) ;
+    text-shadow:0px 1px 0px rgb(133, 133, 133);
+}
+a{
+    text-decoration: underline;
+    color: #fff;
+    transition: transform 1s;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 50px;   
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;  
+    background-color: black;  
+    color: #fff;    
+    padding: 20px;
+  }
+
+  .cntIcon{
+    height: 40px;
+  }
+
+  .cntP{
+    text-transform: uppercase;
+  }
+  #nav{
+    height: 50px;
+    background: linear-gradient(rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
+    padding: 12px;
+    margin-bottom: 50px;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.info {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  padding-top: 1px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(45deg, rgb(76, 76, 76) 0%, rgb(89, 89, 89) 12%, rgb(102, 102, 102) 25%, rgb(71, 71, 71) 39%, rgb(44, 44, 44) 50%, rgb(0, 0, 0) 51%, rgb(17, 17, 17) 60%, rgb(43, 43, 43) 76%, rgb(28, 28, 28) 91%, rgb(19, 19, 19) 100%);
+  font-weight: bold;
+  border:2px solid #fff;
+  cursor:pointer;
+  color:#fff;
+  font-size:17px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #000000;
+}
+
+.info:hover{
+  border:2px solid #333;
+  color:#333;
+  background: linear-gradient(45deg, rgb(242, 246, 248) 0%, rgb(216, 225, 231) 50%, rgb(181, 198, 208) 51%, rgb(224, 239, 249) 100%);    
+}
+
+.back{  
+  height: 50px;
+  width: 50px;
+  font-size:30px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  margin-left: 50%;
+  color:#333;
+  border:2px solid #333;
+  background: linear-gradient(45deg, rgb(242, 246, 248) 0%, rgb(216, 225, 231) 50%, rgb(181, 198, 208) 51%, rgb(224, 239, 249) 100%);    
+}
+
+.back:hover{
+  background: -webkit-linear-gradient(45deg, rgb(76, 76, 76) 0%, rgb(89, 89, 89) 12%, rgb(102, 102, 102) 25%, rgb(71, 71, 71) 39%, rgb(44, 44, 44) 50%, rgb(0, 0, 0) 51%, rgb(17, 17, 17) 60%, rgb(43, 43, 43) 76%, rgb(28, 28, 28) 91%, rgb(19, 19, 19) 100%);
+  color:#fff;
+}
+.info:active {
+    position:relative;
+    color: #888;
+    top:3px;
+}
+
+
+
+.city img{
+  height: 45px;
+}
+  @media(max-width:1080px){ 
+    #nav{
+      height: 105px;
+    }
+    #nav button {
+      margin-top: 10px;
+      margin-right: 5px;
+
+    }
+  
+}

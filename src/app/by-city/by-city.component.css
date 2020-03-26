@@ -1,0 +1,43 @@
+
+.made-up {
+  width: 50%;
+  font-family: arial;
+  margin: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 1rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 0 auto;
+}
+
+.brown,
+.made-up legend,
+.made-up button {
+  background: linear-gradient(rgb(174, 188, 191) 0%, rgb(110, 119, 116) 50%, rgb(10, 14, 10) 51%, rgb(10, 8, 9) 100%);
+  color: #FEFEFE;
+}
+
+.made-up legend {
+  border: double 5px;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.made-up input {
+  border: none;
+  border-bottom: 1px solid #584B4F;
+}
+
+.made-up button {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.made-up button:hover {
+  box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

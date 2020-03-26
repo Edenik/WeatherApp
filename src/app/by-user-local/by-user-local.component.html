@@ -1,0 +1,24 @@
+<div class="container">
+    <fieldset class="made-up">
+        <legend>Add City:</legend>
+        <label>City: <input type="text" placeholder="Enter city name:" #city></label>
+        <button (click)="addCity(city.value)">Send</button>
+        <p *ngIf="error">Must enter valid city name!</p>
+    </fieldset>
+
+    <div class="notes">
+    <div class="city" *ngFor="let city of cityDetailes">
+        <button class="del" (click)="delete(city.id)">X</button>
+        <img class="cntIcon" src="https://www.randomlists.com/img/national-flags/{{city.country}}.svg" >
+        <h2>{{city.name}}</h2>
+        <h3>{{city.description}}</h3>
+        <img src="https://openweathermap.org/img/wn/{{city.icon}}@2x.png" alt="">
+        <p>Country: <label class="cntP">{{city.country}}</label></p>
+        <p>Temp: {{city.temp}}&#186;C</p>
+        <p>Clouds: {{city.clouds}}%</p>
+        <p>Humidity: {{city.humidity}}%</p>
+        <p>Wind: {{city.wind}}m/s</p>
+        <button class="info" (click)="showDetails(city.name)">?</button>
+        </div>
+    </div>
+</div>

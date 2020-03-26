@@ -1,0 +1,23 @@
+<div class="container">
+    <fieldset class="made-up">
+        <legend>Choose City:</legend>
+        <label>City: <select #city (change)="findWeather(city.value)">
+            <option *ngFor="let city of cityList" value="{{city}}">{{city}}</option>
+            </select>
+        </label>
+    </fieldset>
+    <div class="notes">
+    <div class="city" *ngFor="let city of cityDetailes">
+        <img class="cntIcon" src="https://www.randomlists.com/img/national-flags/{{city.country}}.svg" >
+        <h2>{{city.name}}</h2>
+        <h3>{{city.description}}</h3>
+        <img src="https://openweathermap.org/img/wn/{{city.icon}}@2x.png" alt="">
+        <p>Country: <label class="cntP">{{city.country}}</label></p>
+        <p>Temp: {{city.temp}}&#186;C</p>
+        <p>Clouds: {{city.clouds}}%</p>
+        <p>Humidity: {{city.humidity}}%</p>
+        <p>Wind: {{city.wind}}m/s</p>
+        <button class="info" (click)="showDetails(city.name)">?</button>
+    </div>
+    </div>
+</div>
